@@ -15,8 +15,7 @@ public class PropertyReader extends Thread {
     public PropertyReader(String path) {
         this.path = path;
     }
-
-
+    
     @Override
     public void run() {
 

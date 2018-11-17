@@ -25,12 +25,20 @@ public class PropertyFileRead {
             boolean isComEnding = this.path.endsWith("personA.properties");
             //System.out.println(isComEnding);
             if (isComEnding == true) {
-                System.out.println(new String(property.getProperty("FIO").getBytes("ISO8859-1")));
-                System.out.println(new String(property.getProperty("DOB").getBytes("ISO8859-1")));
-                System.out.println(new String(property.getProperty("phone").getBytes("ISO8859-1")));
-                System.out.println(new String(property.getProperty("email").getBytes("ISO8859-1")));
-                System.out.println(new String(property.getProperty("skype").getBytes("ISO8859-1")));
-                System.out.println(property.getProperty("avatar"));
+                String FIO = new String(property.getProperty("FIO").getBytes("ISO8859-1"));
+                System.out.println(FIO);
+                //System.out.println(new String(property.getProperty("FIO").getBytes("ISO8859-1")));
+                String DOB = new String(property.getProperty("DOB").getBytes("ISO8859-1"));
+                //System.out.println(new String(property.getProperty("DOB").getBytes("ISO8859-1")));
+                String phone = new String(property.getProperty("phone").getBytes("ISO8859-1"));
+                //System.out.println(new String(property.getProperty("phone").getBytes("ISO8859-1")));
+                String email = new String(property.getProperty("email").getBytes("ISO8859-1"));
+                //System.out.println(new String(property.getProperty("email").getBytes("ISO8859-1")));
+                String skype = new String(property.getProperty("skype").getBytes("ISO8859-1"));
+                //System.out.println(new String(property.getProperty("skype").getBytes("ISO8859-1")));
+                String avatar = property.getProperty("avatar");
+                //System.out.println(property.getProperty("avatar"));
+
             } else {
                 System.out.println();
                 System.out.println(new String(property.getProperty("target").getBytes("ISO8859-1")));

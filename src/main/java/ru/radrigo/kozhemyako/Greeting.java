@@ -14,6 +14,8 @@ public class Greeting {
         PropertyReader readerOne = new PropertyReader("D:\\Users\\AKozhemyako\\IdeaProjects\\HelloWordSpringBoot\\src\\main\\resources\\properties\\" + this.file);
         readerOne.start();
         readerOne.join();
+
+
     }
 
     public String getFile2() {
